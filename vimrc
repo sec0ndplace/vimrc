@@ -1,4 +1,6 @@
 syntax on
+set nocompatible
+filetype plugin on
 
 set noerrorbells
 set visualbell
@@ -21,13 +23,7 @@ set hlsearch
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdtree'
 
 call plug#end()
-
-
-colorscheme gruvbox
-set background=dark
-
 
