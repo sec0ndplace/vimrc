@@ -1,28 +1,29 @@
-set nocompatible
-filetype plugin on
-colo default
+set nocompatible            "Make sure we have vim features (go past vi features)
+filetype plugin on          "
+colo default                "Default colorscheme
 
-set noerrorbells
-set visualbell
-set t_vb=
-set splitright
-set splitbelow
-set termwinsize=20x0
-set tabstop=4 softtabstop=4
-set expandtab
-set shiftwidth=4
-set smartindent
-set nu
-set noswapfile
-set nobackup
-set undodir =~/.vim/undodir
-set undofile
-set incsearch
-set nowrap
-set incsearch
-set hlsearch
+set noerrorbells            "No annoying error sounds
+set visualbell              "Flash for errors (disabling this in the next line)
+set t_vb=                   "This line with the line above disables flashing on errors completely
+set splitright              "Open new splits to the right by default
+set splitbelow              "Open new splits below by default
+set termwinsize=20x0        "Set default terminal size to 20x0
+set tabstop=4 softtabstop=4 "Tab = 4 Spaces
+set expandtab               "Inserts Spaces when tab is pressed
+set shiftwidth=4            "Default indent is 4
+set smartindent             "Smart indent
+set nu                      "Enable line numbers
+set noswapfile              "No swapfile (might set a directory for these in the future)
+set nobackup                "No backups (might set a directory for these instead)
+set undodir =~/.vim/undodir "Save undofile under .vim in home
+set undofile                "Enable an undofile
+set incsearch               "Enable incremental searching (vim searches as you type)
+set wrap linebreak          "Wrap text but avoid wrapping in middle of words
+set hlsearch                "Highlight searches
 
-syntax enable on
+syntax enable on            "Enable vim syntax highlighting
+
+
 
 " check if win32yank is installed (for windows copy-paste)
 " how to install win32yank - https://stackoverflow.com/questions/44480829/how-to-copy-to-clipboard-in-vim-of-bash-on-windows
