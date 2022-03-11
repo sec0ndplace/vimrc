@@ -1,6 +1,6 @@
 set nocompatible            "Make sure we have vim features (go past vi features)
 filetype plugin on          "
-colo default                "Default colorscheme
+colo slate                  "Decent enough colorscheme
 
 set noerrorbells            "No annoying error sounds
 set visualbell              "Flash for errors (disabling this in the next line)
