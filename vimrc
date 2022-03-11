@@ -22,12 +22,4 @@ set nowrap
 set incsearch
 set hlsearch
 
-call plug#begin('~/.vim/plugged')
-
-Plug 'preservim/nerdtree'
-
-call plug#end()
-
-autocmd BufEnter NERD_tree_* | execute 'normal R'
-
 syntax enable on
