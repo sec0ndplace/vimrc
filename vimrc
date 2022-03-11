@@ -24,7 +24,7 @@ set hlsearch                "Highlight searches
 syntax enable on            "Enable vim syntax highlighting
 
 
-
+""" WSL Copy-Paste (does not require vim with +clipboard, so will work with most base os vim packages)
 " check if win32yank is installed (for windows copy-paste)
 " how to install win32yank - https://stackoverflow.com/questions/44480829/how-to-copy-to-clipboard-in-vim-of-bash-on-windows
 "
@@ -33,7 +33,7 @@ syntax enable on            "Enable vim syntax highlighting
 " chmod +x /tmp/win32yank.exe
 " sudo mv /tmp/win32yank.exe /usr/local/bin/
 
-if filereadable("/usr/local/bin/win32yank.exe")
+if filereadable("/usr/local/bin/win32yank.exe") 
     autocmd TextYankPost * call YankDebounced()
 
     function! Yank(timer)
