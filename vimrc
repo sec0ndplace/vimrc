@@ -59,5 +59,5 @@ if filereadable("/usr/local/bin/win32yank.exe")
     map <expr> p Paste('p')
     map <expr> P Paste('P')
 else
-    :set clipboard=unnamedplus
+    :set clipboard=unnamedplus "requires +clipboard to be enabled, check output of vim +version
 endif
