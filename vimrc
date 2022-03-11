@@ -32,7 +32,6 @@ syntax enable on            "Enable vim syntax highlighting
 " unzip -p /tmp/win32yank.zip win32yank.exe > /tmp/win32yank.exe
 " chmod +x /tmp/win32yank.exe
 " sudo mv /tmp/win32yank.exe /usr/local/bin/
-" set clipboard=unnamed
 
 if filereadable("/usr/local/bin/win32yank.exe")
     autocmd TextYankPost * call YankDebounced()
